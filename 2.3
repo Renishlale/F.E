@@ -1,0 +1,42 @@
+function Student(props) {
+  return <h3>Name: {props.name}</h3>;
+}
+
+export default Student;
+
+
+
+
+import Student from './Student';
+
+function App() {
+  return (
+    <div>
+      <Student name="Renish" />
+      <Student name="Amit" />
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+import { useState } from 'react';
+import Student from './Student';
+
+function App() {
+  const [name, setName] = useState("Renish");
+
+  return (
+    <div>
+      <Student name={name} />
+      <button onClick={() => setName("Rahul")}>
+        Change Name
+      </button>
+    </div>
+  );
+}
+
+export default App;
