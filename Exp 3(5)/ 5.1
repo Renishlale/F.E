@@ -1,0 +1,20 @@
+5: Bootstrap Integration and Responsive Design: Setting Up Bootstrap in React, Advanced Bootstrap Components & Theming and Customization with Bootstrap
+
+a.Integrate Bootstrap into a React project, customize styles using Bootstrap classes, Verify the integration by styling components.
+
+add this line to index.js 
+import "bootstrap/dist/css/bootstrap.min.css";
+
+App.js
+
+function App() {
+  return (
+    <div className="container mt-3">
+      <h1 className="text-primary">Bootstrap Integrated</h1>
+      <button className="btn btn-success">Click Me</button>
+    </div>
+  );
+}
+
+export default App;
+
