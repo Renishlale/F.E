@@ -1,9 +1,28 @@
 b. Explore the Bootstrap grid system for responsive layouts, implement a responsive design using Bootstrap classes, Test the layout on various screen sizes for consistency.
 
-<div className="container">
-  <div className="row">
-    <div className="col-md-4 bg-light">Column 1</div>
-    <div className="col-md-4 bg-secondary text-white">Column 2</div>
-    <div className="col-md-4 bg-warning">Column 3</div>
-  </div>
-</div>
+ App.js
+ import React from "react";
+
+function App() {
+  return (
+    <div className="container mt-4">
+      <h2 className="text-center mb-4">
+        Experiment 13(b) - Grid System
+      </h2>
+
+      <div className="row">
+        <div className="col-md-4 bg-light p-3 border">
+          Column 1
+        </div>
+        <div className="col-md-4 bg-secondary text-white p-3">
+          Column 2
+        </div>
+        <div className="col-md-4 bg-warning p-3">
+          Column 3
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
