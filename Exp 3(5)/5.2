@@ -1,0 +1,34 @@
+b. Explore and implement advanced Bootstrap components (e.g., carousels, modals), Customize and integrate these components into React applications, Ensure proper functionality and responsiveness
+
+add this lines to index.js 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+App.js
+
+function App() {
+  return (
+    <div className="container mt-5">
+      <button
+        className="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Open Modal
+      </button>
+
+      <div className="modal fade" id="myModal">
+        <div className="modal-dialog">
+          <div className="modal-content p-3">
+            <h4>Modal Title</h4>
+            <p>This is modal content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
+
+
