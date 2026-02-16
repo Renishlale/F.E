@@ -1,0 +1,48 @@
+c. Theme Bootstrap components to match the overali design, Customize Bootstrap styles for a unique look and feel, Integrate Bootstrap seamlessly with React components, following best practices.
+
+Add this lines to index.js
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+App.js
+
+import React from "react";
+
+function App() {
+  return (
+    <div className="container mt-5">
+
+      <h1 className="text-center text-primary mb-4">
+        Experiment 5(c) - Theming & Customization
+      </h1>
+
+      {/* Theme Buttons */}
+      <button className="btn btn-primary me-2">
+        Primary
+      </button>
+
+      <button className="btn btn-success me-2">
+        Success
+      </button>
+
+      <button className="btn btn-danger me-2">
+        Danger
+      </button>
+
+      <button className="btn btn-outline-warning">
+        Outline Warning
+      </button>
+
+      {/* Custom Background & Text */}
+      <div className="bg-dark text-white p-4 mt-4 rounded">
+        <h4>Customized Section</h4>
+        <p>This section uses Bootstrap utility classes.</p>
+      </div>
+
+    </div>
+  );
+}
+
+export default App;
+
+
